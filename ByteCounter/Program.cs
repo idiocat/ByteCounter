@@ -3,11 +3,9 @@ using System.IO;
 namespace ByteCounter;
 class Program
 {
-    static void Main()
+    static void Main(string path = @"E://Downloads")
     {
-        string path = @"E://Downloads";
         Console.WriteLine($"Total size: {CountBytes(path)} bytes");
-
         Console.ReadKey();
     }
     static double CountBytes(string path, double size = 0)
